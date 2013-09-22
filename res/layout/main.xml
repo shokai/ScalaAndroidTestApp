@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    >
-<TextView
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:text="Hello World, Test"
-    />
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+  <EditText
+      android:id="@+id/editTextSource"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:inputType="textShortMessage" />
+  <Button
+      android:id="@+id/btnRun"
+      android:text="小文字に変換"
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent" />
+  <TextView
+      android:id="@+id/textViewResult"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="result here" />
 </LinearLayout>
 
