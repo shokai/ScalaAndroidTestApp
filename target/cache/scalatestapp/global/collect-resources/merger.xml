@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="/Users/sho/src/android/scala/ScalaTestApp/res" >
+        <source path="/Users/sho/src/android/scala/ScalaTestApp/res" >
+            <file
+                name="ic_launcher"
+                path="/Users/sho/src/android/scala/ScalaTestApp/res/drawable-hdpi/ic_launcher.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/Users/sho/src/android/scala/ScalaTestApp/res/drawable-ldpi/ic_launcher.png"
+                qualifiers="ldpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/Users/sho/src/android/scala/ScalaTestApp/res/drawable-mdpi/ic_launcher.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/Users/sho/src/android/scala/ScalaTestApp/res/drawable-xhdpi/ic_launcher.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="main"
+                path="/Users/sho/src/android/scala/ScalaTestApp/res/layout/main.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                path="/Users/sho/src/android/scala/ScalaTestApp/res/values/strings.xml"
+                qualifiers="" >
+                <string name="app_name" >Test
+                </string>
+            </file>
+        </source>
+    </dataSet>
+    <dataSet config="/Users/sho/src/android/scala/ScalaTestApp/res" >
+        <source path="/Users/sho/src/android/scala/ScalaTestApp/res" >
+            <file
+                name="ic_launcher"
+                path="/Users/sho/src/android/scala/ScalaTestApp/res/drawable-hdpi/ic_launcher.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/Users/sho/src/android/scala/ScalaTestApp/res/drawable-ldpi/ic_launcher.png"
+                qualifiers="ldpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/Users/sho/src/android/scala/ScalaTestApp/res/drawable-mdpi/ic_launcher.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/Users/sho/src/android/scala/ScalaTestApp/res/drawable-xhdpi/ic_launcher.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="main"
+                path="/Users/sho/src/android/scala/ScalaTestApp/res/layout/main.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                path="/Users/sho/src/android/scala/ScalaTestApp/res/values/strings.xml"
+                qualifiers="" >
+                <string name="app_name" >Test
+                </string>
+            </file>
+        </source>
+    </dataSet>
+
+</merger>

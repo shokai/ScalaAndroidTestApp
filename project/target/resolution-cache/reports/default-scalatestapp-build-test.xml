@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="default"
+		module="scalatestapp-build"
+		revision="0.1-SNAPSHOT"
+		extra-sbtVersion="0.13"
+		extra-scalaVersion="2.10"
+		conf="test"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20130922220557"/>
+	<dependencies>
+		<module organisation="com.hanhuy.sbt" name="android-sdk-plugin">
+			<revision name="1.0.6" status="release" pubdate="20130918110201" resolver="sbt-chain" artresolver="sbt-chain" extra-sbtVersion="0.13" extra-scalaVersion="2.10" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="0">
+				<metadata-artifact status="no" details="" size="1762" time="0" location="/Users/sho/.ivy2/cache/scala_2.10/sbt_0.13/com.hanhuy.sbt/android-sdk-plugin/ivy-1.0.6.xml" searched="false" origin-is-local="false" origin-location="http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.hanhuy.sbt/android-sdk-plugin/scala_2.10/sbt_0.13/1.0.6/ivys/ivy.xml"/>
+				<caller organisation="default" name="scalatestapp-build" conf="test, compile, runtime" rev="1.0.6" rev-constraint-default="1.0.6" rev-constraint-dynamic="1.0.6" callerrev="0.1-SNAPSHOT" extra-sbtVersion="0.13" extra-scalaVersion="2.10"/>
+				<artifacts>
+					<artifact name="android-sdk-plugin" type="jar" ext="jar" status="no" details="" size="580828" time="0" location="/Users/sho/.ivy2/cache/scala_2.10/sbt_0.13/com.hanhuy.sbt/android-sdk-plugin/jars/android-sdk-plugin-1.0.6.jar">
+						<origin-location is-local="false" location="http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.hanhuy.sbt/android-sdk-plugin/scala_2.10/sbt_0.13/1.0.6/jars/android-sdk-plugin.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.android.tools.build" name="builder">
+			<revision name="0.5.7" status="release" pubdate="20130914040756" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://tools.android.com" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="3">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3658" time="0" location="/Users/sho/.ivy2/cache/com.android.tools.build/builder/ivy-0.5.7.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/android/tools/build/builder/0.5.7/builder-0.5.7.pom"/>
+				<caller organisation="com.hanhuy.sbt" name="android-sdk-plugin" conf="compile" rev="0.5.7" rev-constraint-default="0.5.7" rev-constraint-dynamic="0.5.7" callerrev="1.0.6"/>
+				<artifacts>
+					<artifact name="builder" type="jar" ext="jar" status="no" details="" size="121611" time="0" location="/Users/sho/.ivy2/cache/com.android.tools.build/builder/jars/builder-0.5.7.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/android/tools/build/builder/0.5.7/builder-0.5.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.android.tools" name="sdk-common">
+			<revision name="22.2.0" status="release" pubdate="20130914035806" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://tools.android.com" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="23">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2800" time="0" location="/Users/sho/.ivy2/cache/com.android.tools/sdk-common/ivy-22.2.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/android/tools/sdk-common/22.2.0/sdk-common-22.2.0.pom"/>
+				<caller organisation="com.android.tools.build" name="builder" conf="default, compile, runtime, master" rev="22.2.0" rev-constraint-default="22.2.0" rev-constraint-dynamic="22.2.0" callerrev="0.5.7"/>
+				<artifacts>
+					<artifact name="sdk-common" type="jar" ext="jar" status="no" details="" size="249576" time="0" location="/Users/sho/.ivy2/cache/com.android.tools/sdk-common/jars/sdk-common-22.2.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/android/tools/sdk-common/22.2.0/sdk-common-22.2.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.bouncycastle" name="bcpkix-jdk15on">
+			<revision name="1.48" status="release" pubdate="20130212153034" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.bouncycastle.org/java.html" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="21">
+				<license name="Bouncy Castle Licence" url="http://www.bouncycastle.org/licence.html"/>
+				<metadata-artifact status="no" details="" size="2795" time="0" location="/Users/sho/.ivy2/cache/org.bouncycastle/bcpkix-jdk15on/ivy-1.48.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/bouncycastle/bcpkix-jdk15on/1.48/bcpkix-jdk15on-1.48.pom"/>
+				<caller organisation="com.android.tools.build" name="builder" conf="default, compile, runtime, master" rev="1.48" rev-constraint-default="1.48" rev-constraint-dynamic="1.48" callerrev="0.5.7"/>
+				<artifacts>
+					<artifact name="bcpkix-jdk15on" type="jar" ext="jar" status="no" details="" size="585181" time="0" location="/Users/sho/.ivy2/cache/org.bouncycastle/bcpkix-jdk15on/jars/bcpkix-jdk15on-1.48.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/bouncycastle/bcpkix-jdk15on/1.48/bcpkix-jdk15on-1.48.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.bouncycastle" name="bcprov-jdk15on">
+			<revision name="1.48" status="release" pubdate="20130212151801" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.bouncycastle.org/java.html" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="22">
+				<license name="Bouncy Castle Licence" url="http://www.bouncycastle.org/licence.html"/>
+				<metadata-artifact status="no" details="" size="2550" time="0" location="/Users/sho/.ivy2/cache/org.bouncycastle/bcprov-jdk15on/ivy-1.48.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk15on/1.48/bcprov-jdk15on-1.48.pom"/>
+				<caller organisation="org.bouncycastle" name="bcpkix-jdk15on" conf="compile, runtime" rev="1.48" rev-constraint-default="1.48" rev-constraint-dynamic="1.48" callerrev="1.48"/>
+				<artifacts>
+					<artifact name="bcprov-jdk15on" type="jar" ext="jar" status="no" details="" size="2318161" time="0" location="/Users/sho/.ivy2/cache/org.bouncycastle/bcprov-jdk15on/jars/bcprov-jdk15on-1.48.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk15on/1.48/bcprov-jdk15on-1.48.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.android.tools.build" name="builder-model">
+			<revision name="0.5.7" status="release" pubdate="20130914040801" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://tools.android.com" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="20">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2567" time="0" location="/Users/sho/.ivy2/cache/com.android.tools.build/builder-model/ivy-0.5.7.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/android/tools/build/builder-model/0.5.7/builder-model-0.5.7.pom"/>
+				<caller organisation="com.android.tools.build" name="builder" conf="default, compile, runtime, master" rev="0.5.7" rev-constraint-default="0.5.7" rev-constraint-dynamic="0.5.7" callerrev="0.5.7"/>
+				<artifacts>
+					<artifact name="builder-model" type="jar" ext="jar" status="no" details="" size="7189" time="0" location="/Users/sho/.ivy2/cache/com.android.tools.build/builder-model/jars/builder-model-0.5.7.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/android/tools/build/builder-model/0.5.7/builder-model-0.5.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.android.tools.build" name="builder-test-api">
+			<revision name="0.5.7" status="release" pubdate="20130914040806" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://tools.android.com" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="18">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2604" time="0" location="/Users/sho/.ivy2/cache/com.android.tools.build/builder-test-api/ivy-0.5.7.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/android/tools/build/builder-test-api/0.5.7/builder-test-api-0.5.7.pom"/>
+				<caller organisation="com.android.tools.build" name="builder" conf="default, compile, runtime, master" rev="0.5.7" rev-constraint-default="0.5.7" rev-constraint-dynamic="0.5.7" callerrev="0.5.7"/>
+				<artifacts>
+					<artifact name="builder-test-api" type="jar" ext="jar" status="no" details="" size="3822" time="0" location="/Users/sho/.ivy2/cache/com.android.tools.build/builder-test-api/jars/builder-test-api-0.5.7.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/android/tools/build/builder-test-api/0.5.7/builder-test-api-0.5.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.android.tools.ddms" name="ddmlib">
+			<revision name="22.2.0" status="release" pubdate="20130914035714" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://tools.android.com" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="19">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2909" time="0" location="/Users/sho/.ivy2/cache/com.android.tools.ddms/ddmlib/ivy-22.2.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/android/tools/ddms/ddmlib/22.2.0/ddmlib-22.2.0.pom"/>
+				<caller organisation="com.android.tools.build" name="builder-test-api" conf="compile, runtime" rev="22.2.0" rev-constraint-default="22.2.0" rev-constraint-dynamic="22.2.0" callerrev="0.5.7"/>
+				<caller organisation="com.android.tools.build" name="builder" conf="default, compile, runtime, master" rev="22.2.0" rev-constraint-default="22.2.0" rev-constraint-dynamic="22.2.0" callerrev="0.5.7"/>
+				<artifacts>
+					<artifact name="ddmlib" type="jar" ext="jar" status="no" details="" size="258058" time="0" location="/Users/sho/.ivy2/cache/com.android.tools.ddms/ddmlib/jars/ddmlib-22.2.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/android/tools/ddms/ddmlib/22.2.0/ddmlib-22.2.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.android.tools.build" name="manifest-merger">
+			<revision name="22.2.0" status="release" pubdate="20130914035802" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://tools.android.com" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="4">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2939" time="0" location="/Users/sho/.ivy2/cache/com.android.tools.build/manifest-merger/ivy-22.2.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/android/tools/build/manifest-merger/22.2.0/manifest-merger-22.2.0.pom"/>
+				<caller organisation="com.android.tools.build" name="builder" conf="default, compile, runtime, master" rev="22.2.0" rev-constraint-default="22.2.0" rev-constraint-dynamic="22.2.0" callerrev="0.5.7"/>
+				<artifacts>
+					<artifact name="manifest-merger" type="jar" ext="jar" status="no" details="" size="37268" time="0" location="/Users/sho/.ivy2/cache/com.android.tools.build/manifest-merger/jars/manifest-merger-22.2.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/android/tools/build/manifest-merger/22.2.0/manifest-merger-22.2.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="kxml2" name="kxml2">
+			<revision name="2.3.0" status="release" pubdate="20090330213405" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="17">
+				<metadata-artifact status="no" details="" size="2379" time="0" location="/Users/sho/.ivy2/cache/kxml2/kxml2/ivy-2.3.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/kxml2/kxml2/2.3.0/kxml2-2.3.0.pom"/>
+				<caller organisation="com.android.tools.build" name="manifest-merger" conf="compile, runtime" rev="2.3.0" rev-constraint-default="2.3.0" rev-constraint-dynamic="2.3.0" callerrev="22.2.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.android.tools" name="sdklib">
+			<revision name="22.2.0" status="release" pubdate="20130914035811" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://tools.android.com" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="5">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3256" time="0" location="/Users/sho/.ivy2/cache/com.android.tools/sdklib/ivy-22.2.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/android/tools/sdklib/22.2.0/sdklib-22.2.0.pom"/>
+				<caller organisation="com.android.tools.build" name="builder" conf="default, compile, runtime, master" rev="22.2.0" rev-constraint-default="22.2.0" rev-constraint-dynamic="22.2.0" callerrev="0.5.7"/>
+				<caller organisation="com.android.tools" name="sdk-common" conf="compile, runtime" rev="22.2.0" rev-constraint-default="22.2.0" rev-constraint-dynamic="22.2.0" callerrev="22.2.0"/>
+				<caller organisation="com.android.tools.build" name="manifest-merger" conf="compile, runtime" rev="22.2.0" rev-constraint-default="22.2.0" rev-constraint-dynamic="22.2.0" callerrev="22.2.0"/>
+				<artifacts>
+					<artifact name="sdklib" type="jar" ext="jar" status="no" details="" size="589077" time="0" location="/Users/sho/.ivy2/cache/com.android.tools/sdklib/jars/sdklib-22.2.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/android/tools/sdklib/22.2.0/sdklib-22.2.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.commons" name="commons-compress">
+			<revision name="1.0" status="release" pubdate="20090522014238" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/compress/" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="16">
+				<metadata-artifact status="no" details="" size="4834" time="0" location="/Users/sho/.ivy2/cache/org.apache.commons/commons-compress/ivy-1.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.0/commons-compress-1.0.pom"/>
+				<caller organisation="com.android.tools" name="sdklib" conf="compile, runtime" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="22.2.0"/>
+				<artifacts>
+					<artifact name="commons-compress" type="jar" ext="jar" status="no" details="" size="143847" time="0" location="/Users/sho/.ivy2/cache/org.apache.commons/commons-compress/jars/commons-compress-1.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.0/commons-compress-1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.httpcomponents" name="httpmime">
+			<revision name="4.1" status="release" pubdate="20110118051835" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-client" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="15">
+				<metadata-artifact status="no" details="" size="5225" time="0" location="/Users/sho/.ivy2/cache/org.apache.httpcomponents/httpmime/ivy-4.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/httpcomponents/httpmime/4.1/httpmime-4.1.pom"/>
+				<caller organisation="com.android.tools" name="sdklib" conf="compile, runtime" rev="4.1" rev-constraint-default="4.1" rev-constraint-dynamic="4.1" callerrev="22.2.0"/>
+				<artifacts>
+					<artifact name="httpmime" type="jar" ext="jar" status="no" details="" size="26813" time="0" location="/Users/sho/.ivy2/cache/org.apache.httpcomponents/httpmime/jars/httpmime-4.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/httpcomponents/httpmime/4.1/httpmime-4.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.httpcomponents" name="httpclient">
+			<revision name="4.1.1" status="release" pubdate="20110315060728" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-client" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="11">
+				<metadata-artifact status="no" details="" size="5569" time="0" location="/Users/sho/.ivy2/cache/org.apache.httpcomponents/httpclient/ivy-4.1.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.1.1/httpclient-4.1.1.pom"/>
+				<caller organisation="com.android.tools" name="sdklib" conf="compile, runtime" rev="4.1.1" rev-constraint-default="4.1.1" rev-constraint-dynamic="4.1.1" callerrev="22.2.0"/>
+				<artifacts>
+					<artifact name="httpclient" type="jar" ext="jar" status="no" details="" size="351132" time="0" location="/Users/sho/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.1.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.1.1/httpclient-4.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-codec" name="commons-codec">
+			<revision name="1.4" status="release" pubdate="20090810062217" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/codec/" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="14">
+				<metadata-artifact status="no" details="" size="4984" time="0" location="/Users/sho/.ivy2/cache/commons-codec/commons-codec/ivy-1.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/commons-codec/commons-codec/1.4/commons-codec-1.4.pom"/>
+				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile, runtime" rev="1.4" rev-constraint-default="1.4" rev-constraint-dynamic="1.4" callerrev="4.1.1"/>
+				<artifacts>
+					<artifact name="commons-codec" type="jar" ext="jar" status="no" details="" size="58160" time="0" location="/Users/sho/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.4.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/commons-codec/commons-codec/1.4/commons-codec-1.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-logging" name="commons-logging">
+			<revision name="1.1.1" status="release" pubdate="20071127052410" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/logging" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="13">
+				<metadata-artifact status="no" details="" size="3941" time="0" location="/Users/sho/.ivy2/cache/commons-logging/commons-logging/ivy-1.1.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.pom"/>
+				<caller organisation="org.apache.httpcomponents" name="httpmime" conf="compile, runtime" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="4.1"/>
+				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile, runtime" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="4.1.1"/>
+				<artifacts>
+					<artifact name="commons-logging" type="jar" ext="jar" status="no" details="" size="60686" time="0" location="/Users/sho/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.httpcomponents" name="httpcore">
+			<revision name="4.1" status="release" pubdate="20101114041134" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-core-ga/" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="12">
+				<metadata-artifact status="no" details="" size="4803" time="0" location="/Users/sho/.ivy2/cache/org.apache.httpcomponents/httpcore/ivy-4.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.1/httpcore-4.1.pom"/>
+				<caller organisation="org.apache.httpcomponents" name="httpmime" conf="compile, runtime" rev="4.1" rev-constraint-default="4.1" rev-constraint-dynamic="4.1" callerrev="4.1"/>
+				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile, runtime" rev="4.1" rev-constraint-default="4.1" rev-constraint-dynamic="4.1" callerrev="4.1.1"/>
+				<artifacts>
+					<artifact name="httpcore" type="jar" ext="jar" status="no" details="" size="181041" time="0" location="/Users/sho/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.1/httpcore-4.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.android.tools" name="dvlib">
+			<revision name="22.2.0" status="release" pubdate="20130914035720" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://tools.android.com" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="10">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2674" time="0" location="/Users/sho/.ivy2/cache/com.android.tools/dvlib/ivy-22.2.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/android/tools/dvlib/22.2.0/dvlib-22.2.0.pom"/>
+				<caller organisation="com.android.tools" name="sdklib" conf="compile, runtime" rev="22.2.0" rev-constraint-default="22.2.0" rev-constraint-dynamic="22.2.0" callerrev="22.2.0"/>
+				<artifacts>
+					<artifact name="dvlib" type="jar" ext="jar" status="no" details="" size="14817" time="0" location="/Users/sho/.ivy2/cache/com.android.tools/dvlib/jars/dvlib-22.2.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/android/tools/dvlib/22.2.0/dvlib-22.2.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.android.tools.layoutlib" name="layoutlib-api">
+			<revision name="22.2.0" status="release" pubdate="20130914035726" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://tools.android.com" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="6">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2838" time="0" location="/Users/sho/.ivy2/cache/com.android.tools.layoutlib/layoutlib-api/ivy-22.2.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/android/tools/layoutlib/layoutlib-api/22.2.0/layoutlib-api-22.2.0.pom"/>
+				<caller organisation="com.android.tools" name="sdklib" conf="compile, runtime" rev="22.2.0" rev-constraint-default="22.2.0" rev-constraint-dynamic="22.2.0" callerrev="22.2.0"/>
+				<artifacts>
+					<artifact name="layoutlib-api" type="jar" ext="jar" status="no" details="" size="71262" time="0" location="/Users/sho/.ivy2/cache/com.android.tools.layoutlib/layoutlib-api/jars/layoutlib-api-22.2.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/android/tools/layoutlib/layoutlib-api/22.2.0/layoutlib-api-22.2.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.sf.kxml" name="kxml2">
+			<revision name="2.3.0" status="release" pubdate="20090421150425" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://kxml.sourceforge.net/" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="9">
+				<license name="BSD style" url="http://kxml.cvs.sourceforge.net/viewvc/kxml/kxml2/license.txt?view=markup"/>
+				<license name="Public Domain" url="http://creativecommons.org/licenses/publicdomain"/>
+				<metadata-artifact status="no" details="" size="2624" time="0" location="/Users/sho/.ivy2/cache/net.sf.kxml/kxml2/ivy-2.3.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/net/sf/kxml/kxml2/2.3.0/kxml2-2.3.0.pom"/>
+				<caller organisation="com.android.tools.ddms" name="ddmlib" conf="compile, runtime" rev="2.3.0" rev-constraint-default="2.3.0" rev-constraint-dynamic="2.3.0" callerrev="22.2.0"/>
+				<caller organisation="com.android.tools.layoutlib" name="layoutlib-api" conf="compile, runtime" rev="2.3.0" rev-constraint-default="2.3.0" rev-constraint-dynamic="2.3.0" callerrev="22.2.0"/>
+				<caller organisation="kxml2" name="kxml2" conf="compile, runtime, master" rev="2.3.0" rev-constraint-default="2.3.0" rev-constraint-dynamic="2.3.0" callerrev="2.3.0"/>
+				<artifacts>
+					<artifact name="kxml2" type="jar" ext="jar" status="no" details="" size="43858" time="0" location="/Users/sho/.ivy2/cache/net.sf.kxml/kxml2/jars/kxml2-2.3.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/net/sf/kxml/kxml2/2.3.0/kxml2-2.3.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.android.tools" name="common">
+			<revision name="22.2.0" status="release" pubdate="20130914035703" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://tools.android.com" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="7">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2669" time="0" location="/Users/sho/.ivy2/cache/com.android.tools/common/ivy-22.2.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/android/tools/common/22.2.0/common-22.2.0.pom"/>
+				<caller organisation="com.android.tools" name="dvlib" conf="compile, runtime" rev="22.2.0" rev-constraint-default="22.2.0" rev-constraint-dynamic="22.2.0" callerrev="22.2.0"/>
+				<caller organisation="com.android.tools.ddms" name="ddmlib" conf="compile, runtime" rev="22.2.0" rev-constraint-default="22.2.0" rev-constraint-dynamic="22.2.0" callerrev="22.2.0"/>
+				<caller organisation="com.android.tools.layoutlib" name="layoutlib-api" conf="compile, runtime" rev="22.2.0" rev-constraint-default="22.2.0" rev-constraint-dynamic="22.2.0" callerrev="22.2.0"/>
+				<caller organisation="com.android.tools.build" name="builder-model" conf="compile, runtime" rev="22.2.0" rev-constraint-default="22.2.0" rev-constraint-dynamic="22.2.0" callerrev="0.5.7"/>
+				<caller organisation="com.android.tools.build" name="manifest-merger" conf="compile, runtime" rev="22.2.0" rev-constraint-default="22.2.0" rev-constraint-dynamic="22.2.0" callerrev="22.2.0"/>
+				<artifacts>
+					<artifact name="common" type="jar" ext="jar" status="no" details="" size="69864" time="0" location="/Users/sho/.ivy2/cache/com.android.tools/common/jars/common-22.2.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/android/tools/common/22.2.0/common-22.2.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.guava" name="guava">
+			<revision name="13.0.1" status="release" pubdate="20120829002726" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="8">
+				<metadata-artifact status="no" details="" size="3505" time="0" location="/Users/sho/.ivy2/cache/com.google.guava/guava/ivy-13.0.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/google/guava/guava/13.0.1/guava-13.0.1.pom"/>
+				<caller organisation="com.android.tools" name="common" conf="compile, runtime" rev="13.0.1" rev-constraint-default="13.0.1" rev-constraint-dynamic="13.0.1" callerrev="22.2.0"/>
+				<artifacts>
+					<artifact name="guava" type="jar" ext="jar" status="no" details="" size="1891110" time="0" location="/Users/sho/.ivy2/cache/com.google.guava/guava/jars/guava-13.0.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/google/guava/guava/13.0.1/guava-13.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.sf.proguard" name="proguard-base">
+			<revision name="4.10" status="release" pubdate="20130730065248" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="2">
+				<metadata-artifact status="no" details="" size="2883" time="0" location="/Users/sho/.ivy2/cache/net.sf.proguard/proguard-base/ivy-4.10.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/net/sf/proguard/proguard-base/4.10/proguard-base-4.10.pom"/>
+				<caller organisation="com.hanhuy.sbt" name="android-sdk-plugin" conf="compile" rev="4.10" rev-constraint-default="4.10" rev-constraint-dynamic="4.10" callerrev="1.0.6"/>
+				<artifacts>
+					<artifact name="proguard-base" type="jar" ext="jar" status="no" details="" size="833764" time="0" location="/Users/sho/.ivy2/cache/net.sf.proguard/proguard-base/jars/proguard-base-4.10.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/net/sf/proguard/proguard-base/4.10/proguard-base-4.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="asm" name="asm-all">
+			<revision name="3.3.1" status="release" pubdate="20110112230158" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="1">
+				<metadata-artifact status="no" details="" size="2822" time="0" location="/Users/sho/.ivy2/cache/asm/asm-all/ivy-3.3.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/asm/asm-all/3.3.1/asm-all-3.3.1.pom"/>
+				<caller organisation="com.hanhuy.sbt" name="android-sdk-plugin" conf="compile" rev="3.3.1" rev-constraint-default="3.3.1" rev-constraint-dynamic="3.3.1" callerrev="1.0.6"/>
+				<artifacts>
+					<artifact name="asm-all" type="jar" ext="jar" status="no" details="" size="207007" time="0" location="/Users/sho/.ivy2/cache/asm/asm-all/jars/asm-all-3.3.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/asm/asm-all/3.3.1/asm-all-3.3.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
