@@ -1,9 +1,0 @@
-[0m[[0minfo[0m] [0mGenerating R.java[0m
-[0m[[0mdebug[0m] [0mAll libs: List()[0m
-[0m[[0mdebug[0m] [0mAll packages: List()[0m
-[0m[[0mdebug[0m] [0mpackageForR: org.shokai.scalatestapp[0m
-[0m[[0mdebug[0m] [0mproguard.txt: /Users/sho/src/android/scala/ScalaTestApp/bin/proguard.txt[0m
-[0m[[0mdebug[0m] [0mIn modified: Set(/Users/sho/src/android/scala/ScalaTestApp/bin/AndroidManifest.xml)[0m
-[0m[[0mdebug[0m] [0mInRemoved: Set()[0m
-[0m[[0mdebug[0m] [0mOut checked: Set(/Users/sho/src/android/scala/ScalaTestApp/gen/org/shokai/scalatestapp/R.java)[0m
-[0m[[0mdebug[0m] [0mOut modified: Set()[0m

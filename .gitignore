@@ -10,5 +10,6 @@ build.xml
 local.properties
 proguard.cfg
 .settings
+target
 tmp
 src/com/hoho

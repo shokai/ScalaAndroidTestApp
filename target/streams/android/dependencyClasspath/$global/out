@@ -1,2 +1,0 @@
-[0m[[0mdebug[0m] [0mFiltering compile:dependency-classpath from: List(Attributed(/Users/sho/.sbt/boot/scala-2.10.2/lib/scala-library.jar))[0m
-[0m[[0mdebug[0m] [0mscala-library.jar => Some(compile-internal): Some(org.scala-lang:scala-library:2.10.2)[0m
