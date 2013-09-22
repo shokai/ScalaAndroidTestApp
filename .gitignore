@@ -1,0 +1,14 @@
+.DS_Store
+*.log
+*~
+*#*
+*.class
+.classpath
+.project
+bin
+build.xml
+local.properties
+proguard.cfg
+.settings
+tmp
+src/com/hoho
