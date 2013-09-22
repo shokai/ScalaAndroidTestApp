@@ -32,11 +32,6 @@ class Test extends Activity{
         textViewResult.setText(result)
       }
     })
-
-    for(i <- 1.to(10)){
-      Log.v("ScalaTestApp", s"start $i")
-      textViewResult.setText(s"text $i")
-    }
   }
 
   def kana_downcase(str:String):String = {
