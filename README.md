@@ -7,6 +7,7 @@ Dependencies
 ------------
 - android-18 SDK (for Android4.3)
 - sbt
+- [scala android-sdk-plugin](https://github.com/pfn/android-sdk-plugin)
 
 
 Install Dependencies
