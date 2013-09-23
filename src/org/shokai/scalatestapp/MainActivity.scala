@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.view.View;
 import android.view.View.OnClickListener;
 
-class Test extends Activity{
+class MainActivity extends Activity{
 
   var editTextSource:EditText = _
   var textViewResult:TextView = _
