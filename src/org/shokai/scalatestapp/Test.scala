@@ -35,7 +35,7 @@ class Test extends Activity{
   }
 
   def kana_downcase(str:String):String = {
-    var chars = scala.collection.immutable.Map[String,String](
+    val chars = scala.collection.immutable.Map[String,String](
       "あ" -> "ぁ",
       "い" -> "ぃ",
       "う" -> "ぅ",
