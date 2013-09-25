@@ -9,17 +9,13 @@ import android.view.View.OnClickListener;
 
 class MainActivity extends Activity{
 
-  var editTextSource:EditText = _
-  var textViewResult:TextView = _
-  var btnRun:Button = _
+  lazy val editTextSource:EditText = findViewById(R.id.editTextSource).asInstanceOf[EditText]
+  lazy val textViewResult:TextView = findViewById(R.id.textViewResult).asInstanceOf[TextView]
+  lazy val btnRun:Button = findViewById(R.id.btnRun).asInstanceOf[Button]
 
   override def onCreate(savedInstanceState:Bundle){
     super.onCreate(savedInstanceState);
     setContentView(R.layout.main);
-
-    editTextSource = findViewById(R.id.editTextSource).asInstanceOf[EditText]
-    textViewResult = findViewById(R.id.textViewResult).asInstanceOf[TextView]
-    btnRun = findViewById(R.id.btnRun).asInstanceOf[Button]
 
     btnRun.setOnClickListener( new OnClickListener(){
       override def onClick(v:View){
