@@ -21,14 +21,14 @@ class MainActivity extends Activity{
       override def onClick(v:View){
         val source = editTextSource.getText().toString()
         trace(s"source: $source")
-        val result = kana_downcase(source)
+        val result = kanaDowncase(source).toLowerCase()
         trace(s"result: $result")
         textViewResult.setText(result)
       }
     })
   }
 
-  def kana_downcase(str:String):String = {
+  def kanaDowncase(str:String):String = {
     import scala.collection.immutable.Map
     val chars = Map[String,String](
       "あ" -> "ぁ",

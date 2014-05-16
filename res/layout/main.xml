@@ -11,7 +11,7 @@
       android:inputType="textShortMessage" />
   <Button
       android:id="@+id/btnRun"
-      android:text="小文字に変換"
+      android:text="ひらがな・ローマ字を小文字に変換"
       android:layout_height="wrap_content"
       android:layout_width="match_parent" />
   <TextView
