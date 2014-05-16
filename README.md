@@ -30,3 +30,9 @@ Install
 
     % adb devices
     % adb install -r bin/ScalaTestApp-debug.apk
+
+
+Develop
+-------
+
+    % sbt "~ android:run"
